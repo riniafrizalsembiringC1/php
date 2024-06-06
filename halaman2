@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <?php
+    session_start();
+    if($_SESSION['is_loggeed_id'] != TRUE)
+    {
+        header("Location: ../loginform.php");
+        exit();
+    }
+    
+    echo $_SESSION['nama'];
+    ?>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, obcaecati reiciendis! Incidunt expedita saepe est 
+        odit maxime quam magni corporis veniam animi nihil libero facilis deleniti iusto molestias autem quae eaque quas, obcaecati eligendi enim culpa. 
+        Eaque eligendi quasi culpa eos, incidunt, laborum officia ratione ipsa optio nobis alias blanditiis.
+    </p>
+
+</body>
+</html>
